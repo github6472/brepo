@@ -14,7 +14,7 @@ pipeline{
         }
         stage ('run') {
             steps {
-                sh './new_script.sh '
+                sh 'new_script.sh ${1}'
             }
         }
     }
