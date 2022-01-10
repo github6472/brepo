@@ -1,5 +1,5 @@
 pipeline{
-    agent any
+    agent any (lable 'main')
     stages {
          stage( 'code pull') {
             steps {
