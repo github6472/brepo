@@ -2,7 +2,7 @@
 
 
 i=1
-while [ "$i" -lt "$1" ]
+while [ ("$i" -lt "$1") ]
 do
    echo "============== creating container $i =============="
    docker run -itd --name ${cool_}${1} --hostname ${cool_${1}} -v /home/workspace/dev-data:/home/workspace/docker_data -p 806${1}:8080 shaikghouse/myubuntu /bin/bash
