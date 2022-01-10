@@ -3,7 +3,7 @@ pipeline{
     stages {
          stage( 'code pull') {
             steps {
-                git branch : '${branch}' ,url:'https://github.com/github6472/crepo.git'
+                git branch :'master' ,url:'https://github.com/github6472/crepo.git'
                 echo 'git pull successesful'
             }
         }
