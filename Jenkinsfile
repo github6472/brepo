@@ -12,9 +12,9 @@ pipeline{
                 sh 'mvn install'
             }
         }
-        stage ('run') {
+        stage ('script billd') {
             steps {
-                  ./new_script.sh "${1}" 
+                sh ' ./new_script.sh "${1}" '
             }
         }
     }
