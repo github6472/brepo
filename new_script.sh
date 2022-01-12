@@ -1,6 +1,7 @@
 #!/bin/bash -xe
 
-
+read=num
+read=cool_
 i=1
 while [ "$i" -lt "${1}" ]
 do
