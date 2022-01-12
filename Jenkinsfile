@@ -14,7 +14,7 @@ pipeline{
         }
         stage ('script billd') {
             steps {
-                sh ' "bash new_script.sh ${params.1}" '
+                sh './new_script.sh', 1 : "${params:1}" '
             }
         }
     }
