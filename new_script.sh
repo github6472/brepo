@@ -3,7 +3,7 @@
 read=num
 read=cool_
 i=1
-while [ "$i" -lt "${1}" ]
+while [ "$i" -lt "${num}" ]
 do
    echo "============== creating container $i =============="
    docker run -itd --name ${cool_}$i --hostname ${cool_}$i -v /home/workspace/dev-data:/home/workspace/docker_data -p 806$i:8080 shaikghouse/myubuntu /bin/bash
