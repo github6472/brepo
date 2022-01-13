@@ -11,7 +11,7 @@ do
    echo "$(docker inspect --format '{{.NetworkSettings.Networks.bridge.IPAddress}}' ${name}$i)"
    pwd
    docker cp /home/workspace/.jenkins/workspace/cont_deploy_pp/target/crepo.war ${name}$i:/home/dev_data/apache-tomcat-9.0.55/webapps/
-   docker exec -itd ${name}$i:/home/dev_data/apache-tomcat-9.0.55/bin/startup.sh 
+   docker exec -itd ${name}$i /home/dev_data/apache-tomcat-9.0.55/bin/startup.sh 
    i=$(($i+1))
 
 done
