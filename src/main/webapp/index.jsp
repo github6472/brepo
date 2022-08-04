@@ -91,7 +91,7 @@
 	  </div>	
           </div>
            <footer class="container-fluid text-center">
-	   <p>Join DevOps class / Contact us :+91 8977902289 </p>
+	   <p>Join DevOps class / Contact us :+91 8328097743 </p>
 	   </footer>
 	    </body>
             </html>
